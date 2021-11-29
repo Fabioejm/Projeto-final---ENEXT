@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUSA AMARRAÇÃO MALHA WAFFLE PRETO - HORSE STORE</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- fonte cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section inicio  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-horse-head"></i> HORSE STORE </a>
+
+        <nav class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">NOVIDADES</a>
+            <a href="#">BÁSICOS</a>
+            <a href="#">ESSENCIAIS</a>
+            <a href="#">FEMININO</a>
+            <a href="#">MASCULINO</a>
+            <a class="outlet" href="#">OUTLET</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Buscar por...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart"></div>
+
+        <form action="" class="login-form">
+            <h3>login</h3>
+            <input type="email" placeholder="Seu email" class="box">
+            <input type="password" placeholder="Sua senha" class="box">
+            <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+            <p>Não tem uma conta <a href="#">Crie agora</a></p>
+            <input type="submit" value="login" class="btn">
+        </form>
+
+    </header><br><br><br><br>
+    <!--header section fim-->
+
+    <!--Produto main inicio-->
+    <!-- Swiper -->
+    <main>
+        <div class="content">
+            <div class="left-side">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="image/foto 1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/foto 2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/foto 3.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        effect: "flip",
+                        grabCursor: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+            </div>
+            <div class="right-side">
+                <h1>Blusa amarração malha waffle preto</h1>
+                <div class="frete-img">
+                    <img alt="" src="image/frete-gratis.gif">
+                </div>
+                <p class="desconto"><s>R$ 59,90</s></p>
+                <span>R$ 29,90</span>
+                <input type="submit" value="ADICIONAR À SACOLA" class="btn">
+                <p class="descricao">TAMANHO:</p>
+                <div class="cor">
+                    <div>
+                        <input type="checkbox" id="pp" name="pp" checked>
+                        <label for="pp">PP</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="p" name="p" checked>
+                        <label for="p">P</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="m" name="m" checked>
+                        <label for="m">M</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="g" name="g" checked>
+                        <label for="g">G</label>
+                    </div>
+                </div><br>
+                <p class="descricao">Descrição:</p>
+                <p class="blusa">Blusa confeccionada em malha waffle, um tecido com leve textura. <span
+                        id="pontos">...</span><span id="mais">Modelagem tradicional, que acompanha as linhas do corpo
+                        com muito conforto. Modelo com
+                        decote redondo e mangas curtas. Detalhe de abertura e amarração frontal. Seu estilo com nó a frente da peça valoriza ainda mais seu corpo. Uma peça confortável e
+                        ideal para produções cheias de casualidade. Invista com calça jeans de cintura alta, sandália
+                        flatform e bolsa tiracolo!
+                        <p>Modelagem: Tradicional</p>
+                        <p>Decote: Redondo</p>
+                        <p>Mangas: Curtas</span></p></p>
+                <button onclick="leiaMais()" id="btnLeiaMais">Leia mais</button>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- produto main fim -->
+
+    <!-- produto vitrine section inicio  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> VEJA <span>TAMBEM!</span> </h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/horse 1.jpg" alt="">
+                    <h3>BLUSA AMARRAÇÃO MALHA WAFFLE</h3>
+                    <div class="price">R$ 29,90</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">COMPRA RÁPIDA</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/horse 2.jpg" alt="">
+                    <h3>BLUSA AMARRAÇÃO MALHA WAFFLE</h3>
+                    <div class="price">R$ 29,90</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">COMPRA RÁPIDA</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/horse 3.jpg" alt="">
+                    <h3>BLUSA CANELADA GOLA ALTA</h3>
+                    <div class="price">R$ 59,90</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">COMPRA RÁPIDA</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/horse 4.jpg" alt="">
+                    <h3>BLUSA MADE IN THE 90'S VISCOSE</h3>
+                    <div class="price">R$ 29,90</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">COMPRA RÁPIDA</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- produto vitrine section fim -->
+
+    <!-- footer section inicio  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> HORSE STORE <i class="fas fa-horse-head"></i> </h3>
+                <p>A força da moda nos inspira.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>INFORMAÇÕES</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> (61) 99999-9898 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> horsestore@enext.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> BRASÍLIA-DF </a>
+            </div>
+
+            <div class="box">
+                <h3>INSTITUCIONAL</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> NOSSAS LOJAS </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> GRUPO HORSE </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> MEUS PEDIDOS </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> AJUDA </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> BLOG HORSE STORE </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> ESPAÇO LOJISTA </a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>INSCREVA-SE PARA RECEBER AS ÚLTIMAS ATUALIZAÇÕES</p>
+                <input type="email" placeholder="seu email" class="email">
+                <input type="submit" value="ENVIAR" class="btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit"> DESENVOLVIDO POR <span> FÁBIO EMMANUEL </span></div>
+
+    </section>
+
+    <!-- footer section fim -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+
+</body>
+
+</html>
